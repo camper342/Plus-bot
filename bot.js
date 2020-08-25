@@ -716,7 +716,7 @@ client.on("guildMemberAdd", member => {
       .setColor("RANDOM")
       .setThumbnail(h.avatarURL)
       .setAuthor(h.username, h.avatarURL)
-      .setDescription("  WELCOME TO OUR SERVER")
+      .setDescription("**WELCOME TO OUR SERVER**")
       .addField("Name:", member.user)
       .addField(" YOU ARE MEMBER :-", member.guild.memberCount)
       .addField("User ID:", member.id)
