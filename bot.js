@@ -930,10 +930,11 @@ client.on("message", message => {
 -Welcome Commands     | ${prefix}w help
 
 -${prefix}invite   
-`);
-    .setTitle(">> Server Support <<")
-    .setURL("https://discord.gg/B6VeHQu")
 
+
+ Server Suopport: https://discord.gg/B6VeHQu
+`);
+  
     message.channel.sendEmbed(embed);
   }
 });
