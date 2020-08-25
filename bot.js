@@ -51,7 +51,7 @@ client.on("message", message => {
       return message.channel.send(`Sorry you do not have this permission`);
     let say = new Discord.RichEmbed()
       .setDescription(args.join(" "))
-      .setColor("RANDOM");
+      .setColor("#fa0000");
     message.channel.sendEmbed(say);
     message.delete();
   }
@@ -74,7 +74,7 @@ client.on("message", camper => {
         .map(roles => `**__${roles.name}__ |**`)
         .join(` `);
       let campuser = new Discord.RichEmbed()
-        .setColor("RANDOM")
+        .setColor("#fa0000")
         .setTitle(" 🔥 | Use  r Info")
         .setAuthor(camper.author.username, camper.author.avatarURL)
         .addField("**- Name :**   ", camper.author.username, true)
@@ -135,7 +135,7 @@ client.on("message", message => {
       .addField(":earth_africa:-** Region **", ` ${message.guild.region}`, true)
       .setImage("")
 
-      .setColor("RANDOM");
+      .setColor("#fa0000");
     message.channel.sendEmbed(embed);
   }
 });
@@ -147,7 +147,7 @@ client.on("message", message => {
   if (message.content === prefix + "bot") {
     const bot = new Discord.RichEmbed()
       .setAuthor(client.user.username, client.user.avatarURL)
-      .setColor("RANDOM")
+      .setColor("#fa0000")
       .addField(
         "- **Bot Ping** : ",
         `» ${Date.now() - client.createdTimestamp}` + " ms",
@@ -210,7 +210,7 @@ client.on("message", async message => {
           ` [  **${daysJoined.toFixed(0)} Days ago **  ]   `
         )
         .setImage("")
-        .setColor("RANDOM")
+        .setColor("#fa0000")
         .setTimestamp()
         .setFooter(Tag, Avatar);
 
@@ -265,7 +265,7 @@ client.on("message", message => {
       .map(m => `${i++} - <@${m.id}>`);
     const embed = new Discord.RichEmbed()
       .setAuthor(message.author.tag, message.author.avatarURL)
-      .setColor("RANDOM")
+      .setColor("#fa0000")
       .setDescription(
         `**Found ${
           message.guild.members.filter(m => m.user.bot).size
@@ -391,7 +391,7 @@ client.on("message", async message => {
     });
 
     const embed = new Discord.RichEmbed()
-      .setColor("RANDOM")
+      .setColor("#fa0000")
       .addField("Top Invites.", `${possibleInvites}`);
 
     message.channel.send(embed);
@@ -713,7 +713,7 @@ client.on("guildMemberAdd", member => {
     moment.locale("en-ly");
     var h = member.user;
     let norelden = new Discord.RichEmbed()
-      .setColor("RANDOM")
+      .setColor("#fa0000")
       .setThumbnail(h.avatarURL)
       .setAuthor(h.username, h.avatarURL)
       .setDescription("**WELCOME TO OUR SERVER**")
@@ -752,7 +752,7 @@ client.on("guildMemberRemove", member => {
     moment.locale("en-ly");
     var h = member.user;
     let norelden = new Discord.RichEmbed()
-      .setColor("RANDOM")
+      .setColor("#fa0000")
       .setThumbnail(h.avatarURL)
       .setAuthor(h.username, h.avatarURL)
       .setDescription("GOOD BYE")
@@ -939,7 +939,7 @@ client.on("message", message => {
 
 client.on("message", message => {
   if (message.content === prefix + "g help") {
-    const embed = new Discord.RichEmbed().setColor("RANDOM").setImage("")
+    const embed = new Discord.RichEmbed().setColor("#fa0000").setImage("")
       .setDescription(`**General Commands** 
 
 ${prefix}say 
@@ -973,7 +973,7 @@ ${prefix}savatar
 
 client.on("message", message => {
   if (message.content === prefix + "m help") {
-    const embed = new Discord.RichEmbed().setColor("RANDOM").setImage("")
+    const embed = new Discord.RichEmbed().setColor("#fa0000").setImage("")
       .setDescription(`**General Commands** 
 
 ${prefix}close
@@ -1019,7 +1019,7 @@ ${prefix}setLeft    | Please do not change left channel name!!!!!
 
 client.on("message", message => {
   if (message.content === prefix + "gm help") {
-    const embed = new Discord.RichEmbed().setColor("RANDOM").setImage("")
+    const embed = new Discord.RichEmbed().setColor("#fa0000").setImage("")
       .setDescription(`**General Commands** 
 
 ${prefix}slots
