@@ -683,7 +683,7 @@ client.on("message", async message => {
     message.channel.send(
       "✅| **Done successfully**, please send **+close** in welcome channel"
     );
-    message.guild.createChannel(`│𝐖𝐞𝐥𝐜𝐨𝐦𝐞`, "chat").then(c => {});
+    message.guild.createChannel(`│welcome`, "chat").then(c => {});
   }
 });
 
@@ -700,13 +700,13 @@ client.on("message", async message => {
     message.channel.send(
       "✅| **Done successfully**, please send **+close** in left channel"
     );
-    message.guild.createChannel(`│𝐋𝐞𝐟𝐭`, "chat").then(c => {});
+    message.guild.createChannel(`│left`, "chat").then(c => {});
   }
 });
 
 client.on("guildMemberAdd", member => {
   let welcomer = member.guild.channels.find(
-    channel => channel.name === "│𝐖𝐞𝐥𝐜𝐨𝐦𝐞"
+    channel => channel.name === "│welcome"
   );
   if (!welcomer) return;
   if (welcomer) {
@@ -745,7 +745,7 @@ client.on("guildMemberAdd", member => {
 
 client.on("guildMemberRemove", member => {
   let welcomer = member.guild.channels.find(
-    channel => channel.name === "│𝐋𝐞𝐟𝐭"
+    channel => channel.name === "│left"
   );
   if (!welcomer) return;
   if (welcomer) {
