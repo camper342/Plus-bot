@@ -4,7 +4,6 @@ const client = new Client({ disableEveryone: true });
 const canvas = require("canvas");
 const convert = require("hh-mm-ss");
 const botversion = require("./package.json").version;
-const simpleytapi = require("simple-youtube-api");
 const moment = require("moment");
 const fs = require("fs");
 const util = require("util");
