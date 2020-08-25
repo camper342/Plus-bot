@@ -928,6 +928,12 @@ client.on("message", message => {
 -Game Commands        | ${prefix}gm help
 
 -Welcome Commands     | ${prefix}w help
+
+-${prefix}invite     
+
+    .setTitle(">> Server Support <<")
+    .setURL("https://discord.gg/B6VeHQu")
+
 `);
 
     message.channel.sendEmbed(embed);
