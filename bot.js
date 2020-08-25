@@ -918,7 +918,7 @@ client.on("message", async message => {
 
 client.on("message", message => {
   if (message.content === prefix + "help") {
-    const embed = new Discord.RichEmbed().setColor("RANDOM").setImage("")
+    const embed = new Discord.RichEmbed().setColor("#fa0000").setImage("https://cdn.discordapp.com/attachments/746679463156252788/747846170537361529/logo-new-2.png")
       .setDescription(`**Bot Commands** 
 
 -General Commands     | ${prefix}g help
@@ -1037,6 +1037,24 @@ ${prefix}paper
     message.channel.sendEmbed(embed);
   }
 });
+
+//////////////////////////////////////////////////
+
+   client.on('message', message => {
+	   if(message.content.startsWith(`${prefix}invite`)){
+		   if(!message.channel.guild) return;
+		   var embed = new Discord.RichEmbed()
+		   .setTitle(">> ClickHere To Add" + `${client.user.username}` + " <<")
+		   .setURL("https://discord.com/api/oauth2/authorize?client_id=747721928915025931&permissions=8&scope=bot")
+		   .setTimestamp()
+		   .setFooter(`Requested By | ${message.author.username}`)
+		   .setColor("#fa0000")
+		   message.channel.send(":white_check_mark: | Check Your DM!")
+		   message.author.send({embed})
+	   }
+   });
+
+   ;
 
 
 
