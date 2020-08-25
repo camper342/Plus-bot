@@ -605,7 +605,7 @@ client.on("message", msg => {
     .split(" ")
     .slice(1)
     .join(" ");
-  if (msg.content.startsWith(prefix + "moveme")) {
+  if (msg.content.startsWith(prefix + "Mme")) {
     if (!msg.member.voiceChannel)
       return msg.channel.send("**:no_entry:   You're not in voice channel! **");
     if (!args)
@@ -888,7 +888,7 @@ client.on("message", message => {
 client.on("message", async message => {
   if (!message.guild || message.author.bot) return;
   let args = message.content.split(" ");
-  if (args[0] == `${prefix}cr`) {
+  if (args[0] == `${prefix}createrole`) {
     if (
       !message.guild.me.hasPermission("MANAGE_ROLES") ||
       !message.member.hasPermission("MANAGE_ROLES")
@@ -962,6 +962,8 @@ ${prefix}avatar
 
 ${prefix}savatar
 
+${prefix}allbots
+
 `);
 
     message.channel.sendEmbed(embed);
@@ -988,11 +990,11 @@ ${prefix}banlist
 
 ${prefix}clear
 
-${prefix}cr
+${prefix}createrole
 
 ${prefix}move
 
-${prefix}moveme
+${prefix}Mme
 
 `);
 
