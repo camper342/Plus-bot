@@ -991,7 +991,7 @@ ${prefix}kick
 
 ${prefix}ban
 
-${prefix}banlist
+${prefix}banslist
 
 ${prefix}clear
 
@@ -1030,8 +1030,8 @@ client.on("message", message => {
       .setDescription(`**General Commands** 
 
 ${prefix}slots
-
-${prefix}rock
+------------------------------------------------------
+${prefix}stone
 
 ${prefix}scissors
 
