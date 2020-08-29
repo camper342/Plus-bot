@@ -33,4 +33,4 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
   }
 });
 
-client.login(process.env.TOKEN);
+client.login("NzMyOTQyOTMzODQ5OTMxODI3.Xw78TA.vsfRS00PyBFO9rfhnHxGt8tqlB4");
