@@ -22,7 +22,7 @@ client.on("voiceStateUpdate", (oldMember, newMember) => {
   ) {
     const voiceChannel = client.channels.get("749187712418054224");
     voiceChannel.join().then(connnection => {
-      let disp = yt("https://www.youtube.com/watch?v=KqidTvZ6Tnw", {
+      let disp = yt("https://www.youtube.com/watch?v=n74omgRJXlo", {
         audioonly: true
       });
       const dispatcher = connnection.playStream(disp);
