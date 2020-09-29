@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node bot.js"
   },
- dependencies": {
+ "dependencies": {
     "approximate-number": "^2.0.0",
     "discord.js": "^11.5.1",
     "djs-commands": "^1.2.2",
