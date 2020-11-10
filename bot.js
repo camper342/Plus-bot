@@ -24,6 +24,7 @@ const client22 = new Discord.Client();
 const client23 = new Discord.Client();
 const client24 = new Discord.Client();
 const client24 = new Discord.Client();
+const client25 = new Discord.Client();
 
 
 client.login("");//////
@@ -50,5 +51,6 @@ client21.login(".XzjwIA.");/////
 client22.login("..NW-");/////
 client23.login(".XzjyPg.");//////
 client24.login(".XzjxEg.-Qc");//////
+client25.login("");//////
 
 
